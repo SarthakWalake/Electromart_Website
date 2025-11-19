@@ -61,4 +61,54 @@ public class Booking{
     {
         this.email = email;
     }
+
+    public String setAddress()
+    {
+        return address;
+    }
+
+    public void getAddress(String address)
+    {
+        this.address = address;
+    }
+
+    public String getDate()
+    {
+        return date;
+    }
+
+    public void setDate(String date)
+    {
+        this.date = date;
+    }
+
+    public String getProductName()
+    {
+        return productName;
+    }
+
+    public void setProductName(String productName)
+    {
+        this.productName = productName;
+    }
+
+    public String getPaymentMethod()
+    {
+        return paymentMethod;
+    }
+
+    public void setPaymentMethod(String paymentMethod)
+    {
+        this.paymentMethod = paymentMethod;
+    }
+
+    public String getPaymentStatus()
+    {
+        return paymentStatus;
+    }
+
+    public void setPaymentStatus(String paymentStatus)
+    {
+        this.paymentStatus = paymentStatus;
+    }
 }
