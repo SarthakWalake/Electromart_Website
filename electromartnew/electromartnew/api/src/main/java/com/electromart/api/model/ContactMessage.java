@@ -5,24 +5,21 @@ import java.time.LocalDateTime;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-@Document(collation = "conatct_messages")
+@Document(collection = "contact_messages")
 public class ContactMessage {
-    
+
     @Id
     private String id;
+
     private String name;
     private String email;
     private String subject;
     private String message;
     private LocalDateTime createdAt = LocalDateTime.now();
 
-    public ContactMessage()
-    {
+    public ContactMessage() {}
 
-    }
-
-    public ContactMessage(String name,String email,String subject,String message)
-    {
+    public ContactMessage(String name, String email, String subject, String message) {
         this.name = name;
         this.email = email;
         this.subject = subject;

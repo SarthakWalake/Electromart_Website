@@ -4,6 +4,5 @@ import org.springframework.data.mongodb.repository.MongoRepository;
 
 import com.electromart.api.model.ContactMessage;
 
-public interface ContactMessageRepository extends MongoRepository<ContactMessage,String>{
-    
+public interface ContactMessageRepository extends MongoRepository<ContactMessage, String> {
 }

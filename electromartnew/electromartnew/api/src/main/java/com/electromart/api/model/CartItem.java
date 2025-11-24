@@ -13,13 +13,10 @@ public class CartItem {
     private int quantity;
     private String icon;
 
-    public CartItem()
-    {
+    // ✅ Add constructor, getters, setters
+    public CartItem() {}
 
-    }
-
-    public CartItem(String id,String productId,String name,String price,int quantity,String icon)
-    {
+    public CartItem(String id, String productId, String name, String price, int quantity, String icon) {
         this.id = id;
         this.productId = productId;
         this.name = name;
@@ -28,63 +25,21 @@ public class CartItem {
         this.icon = icon;
     }
 
-    public String getId()
-    {
-        return id;
-    }
+    public String getId() { return id; }
+    public void setId(String id) { this.id = id; }
 
-    public void setId(String id)
-    {
-        this.id = id;
-    }
+    public String getProductId() { return productId; }
+    public void setProductId(String productId) { this.productId = productId; }
 
-    public String getProductId()
-    {
-        return productId; 
-    }
+    public String getName() { return name; }
+    public void setName(String name) { this.name = name; }
 
-    public void setProductId(String productId)
-    {
-        this.productId = productId;
-    }
+    public String getPrice() { return price; }
+    public void setPrice(String price) { this.price = price; }
 
-    public String getName()
-    {
-        return name;
-    }
+    public int getQuantity() { return quantity; }
+    public void setQuantity(int quantity) { this.quantity = quantity; }
 
-    public void setName(String name)
-    {
-        this.name = name;
-    }
-
-    public String getPrice()
-    {
-        return price;
-    }
-
-    public void setPrice(String price)
-    {
-        this.price = price;
-    }
-
-    public int getQuantity()
-    {
-        return quantity;
-    }
-
-    public void setQuantity(int quantity)
-    {
-        this.quantity = quantity;
-    }
-
-    public String getIcon()
-    {
-        return icon;
-    }
-
-    public void setIcon(String icon)
-    {
-        this.icon = icon;
-    }
+    public String getIcon() { return icon; }
+    public void setIcon(String icon) { this.icon = icon; }
 }

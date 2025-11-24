@@ -4,7 +4,7 @@ import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 @Document(collection = "bookings")
-public class Booking{
+public class Booking {
     @Id
     private String id;
     private String name;
@@ -12,16 +12,12 @@ public class Booking{
     private String address;
     private String date;
     private String productName;
-    private String paymentMethod;
-    private String paymentStatus;
+    private String paymentMethod;  // ✅ new field
+    private String paymentStatus;  // ✅ new field
 
-    public Booking()
-    {
+    public Booking() {}
 
-    }
-
-    public Booking(String id,String name,String email,String address,String date,String productName,String paymentMethod,String paymentStatus)
-    {
+    public Booking(String id, String name, String email, String address, String date, String productName, String paymentMethod, String paymentStatus) {
         this.id = id;
         this.name = name;
         this.email = email;
@@ -32,83 +28,28 @@ public class Booking{
         this.paymentStatus = paymentStatus;
     }
 
-    public String getId()
-    {
-        return id;
-    }
+    // ✅ Getters & Setters
+    public String getId() { return id; }
+    public void setId(String id) { this.id = id; }
 
-    public void setId(String id)
-    {
-        this.id = id;
-    }
+    public String getName() { return name; }
+    public void setName(String name) { this.name = name; }
 
-    public String getName()
-    {
-        return name;
-    }
+    public String getEmail() { return email; }
+    public void setEmail(String email) { this.email = email; }
 
-    public void setName(String name)
-    {
-        this.name = name;
-    }
+    public String getAddress() { return address; }
+    public void setAddress(String address) { this.address = address; }
 
-    public String getEmail()
-    {
-        return email;
-    }
+    public String getDate() { return date; }
+    public void setDate(String date) { this.date = date; }
 
-    public void setEmail(String email)
-    {
-        this.email = email;
-    }
+    public String getProductName() { return productName; }
+    public void setProductName(String productName) { this.productName = productName; }
 
-    public String setAddress()
-    {
-        return address;
-    }
+    public String getPaymentMethod() { return paymentMethod; }
+    public void setPaymentMethod(String paymentMethod) { this.paymentMethod = paymentMethod; }
 
-    public void getAddress(String address)
-    {
-        this.address = address;
-    }
-
-    public String getDate()
-    {
-        return date;
-    }
-
-    public void setDate(String date)
-    {
-        this.date = date;
-    }
-
-    public String getProductName()
-    {
-        return productName;
-    }
-
-    public void setProductName(String productName)
-    {
-        this.productName = productName;
-    }
-
-    public String getPaymentMethod()
-    {
-        return paymentMethod;
-    }
-
-    public void setPaymentMethod(String paymentMethod)
-    {
-        this.paymentMethod = paymentMethod;
-    }
-
-    public String getPaymentStatus()
-    {
-        return paymentStatus;
-    }
-
-    public void setPaymentStatus(String paymentStatus)
-    {
-        this.paymentStatus = paymentStatus;
-    }
+    public String getPaymentStatus() { return paymentStatus; }
+    public void setPaymentStatus(String paymentStatus) { this.paymentStatus = paymentStatus; }
 }

@@ -10,22 +10,22 @@ import com.electromart.api.repository.BookingRepository;
 
 @Service
 public class BookingService {
-    
+
     @Autowired
     private BookingRepository bookingRepository;
 
-    public Booking saveBooking(Booking booking)
-    {
+    // Save booking
+    public Booking saveBooking(Booking booking) {
         return bookingRepository.save(booking);
     }
 
-    public List<Booking> getAllBookings()
-    {
+    // Get all bookings
+    public List<Booking> getAllBookings() {
         return bookingRepository.findAll();
     }
 
-    public void deleteBooking(String id)
-    {
+    // Delete booking by ID (optional)
+    public void deleteBooking(String id) {
         bookingRepository.deleteById(id);
     }
 }
